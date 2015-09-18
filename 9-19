@@ -1,0 +1,27 @@
+To include certain functions in your program (similar to importing) use #include <packagename>
+   most of your code will begin with
+   	#include <stdio>
+	#include <stdlib>
+   this will include the standard in/out and standard lib in your prgram
+
+You can also write .h files that you can include
+
+PATH is a list of locations where you keep executables
+export $PATH displays your PATH list
+
+To run a program that is not included in PATH you can use ./[filename]
+
+keep in mind that you cannot printf( "varname = "+ varname ) because strings are immutable
+     instead to do the same thing use printf( "varname = %vartype", bob )
+     	     the compiler holds a place n the printf string to be replaced with a [vartype]
+	     The formatting characters are as follows
+	     	 float: %f
+		 double: %lf
+		 int: %d
+		 long: %ld
+		 char: %c
+		 char array: %s
+		 pointer: %p
+
+	     A pro tip is to use this syntax:
+	       	 %0.<x>f; to print x digits of f
